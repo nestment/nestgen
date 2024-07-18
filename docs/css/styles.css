@@ -1,0 +1,200 @@
+/* Relative Font */
+@font-face {
+    font-family: 'Relative';
+    src: url('/fonts/relative/Relative-Book.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Relative';
+    src: url('/fonts/relative/Relative-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Relative';
+    src: url('/fonts/relative/Relative-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Relative', sans-serif;
+    color: white;
+    height: 100vh;
+    background: #000;
+}
+body .fancy-bg {
+    background: radial-gradient(37.83% 86.54% at 9.75% 121.66%, #39A0FF 0%, rgba(57, 160, 255, 0.00) 100%), #000;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    /*transition: opacity 1s;*/
+
+    animation: beat 10s infinite;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+}
+
+.header {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    padding: 24px 56px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    box-sizing: border-box;
+}
+
+.left-group {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    background: url('path_to_your_logo_image') no-repeat center center;
+    background-size: contain;
+}
+
+.logo-text {
+    margin-left: 16px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.nav {
+    display: flex;
+    gap: 36px;
+}
+
+.nav-item {
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.resources {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    mask-size: 20px 20px;
+    mask-image: url(/img/icon-chevron-down.svg);
+}
+
+.right-group {
+    display: flex;
+    gap: 8px;
+}
+
+.start-planning, .log-in {
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.start-planning {
+    background: white;
+    color: black;
+}
+
+.log-in {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.main-content {
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.coming-soon-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.coming-soon-logo {
+    width: 24px;
+    height: 24px;
+    background: url('path_to_your_logo_image') no-repeat center center;
+    background-size: contain;
+}
+
+.coming-soon-text {
+    display: block;
+    margin: 0 auto;
+}
+
+.nestgen {
+    font-size: 32px;
+    font-weight: 400;
+    color: #39A0FF; /* Assuming NestGen is styled with a blue color */
+}
+
+.coming-soon-line {
+    display: inline-block;
+    width: 84px;
+    height: 1px;
+    margin: 0 24px 10px 24px;
+    background: white;
+}
+
+.coming-soon {
+    font-size: 32px;
+    font-weight: 400;
+}
+.inner {
+    height: 152px;
+}
+
+@keyframes beat {
+  0%   {opacity: 1;}
+  50%  {opacity: .5;}
+  100% {opacity: 1;}
+}
