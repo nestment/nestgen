@@ -19,5 +19,5 @@ const typeWriter = () => {
 window.addEventListener('load', () => {
     setTimeout(() => {
         typeWriter();
-    }, 1500);
+    }, 1000);
 });
