@@ -94,9 +94,12 @@ body .fancy-bg {
 }
 
 .nav-item {
+    display: inline-block;
+    text-decoration: none;
     font-size: 16px;
     line-height: 24px;
     cursor: pointer;
+    color: #fff;
 }
 
 .resources {
@@ -118,20 +121,22 @@ body .fancy-bg {
     gap: 8px;
 }
 
-.start-planning, .log-in {
+.btn {
+    display: inline-block;
     padding: 12px 16px;
     font-size: 14px;
     font-weight: 500;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.start-planning {
+.btn.start-planning {
     background: white;
     color: black;
 }
 
-.log-in {
+.btn.log-in {
     background: transparent;
     color: white;
     border: 1px solid white;
