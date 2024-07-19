@@ -1,4 +1,7 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1020px) {
+    .container {
+        display: block;
+    }
     .main-text {
         font-size: 40px;
     }
@@ -8,7 +11,7 @@
     .typewriterHolder {
         text-align: left;
         padding: 0 24px;
-        min-height: 138px;
+        min-height: 144px;
         margin-bottom: 48px;
     }
 
@@ -37,6 +40,10 @@
         margin-bottom: 6px;
     }
 
+    .logo-text {
+        position: absolute;
+        top: 22px;
+    }
     .logo-text img {
         display: block;
         width: 130px;
