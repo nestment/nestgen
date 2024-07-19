@@ -33,7 +33,7 @@ body {
     background: #000;
 }
 body .fancy-bg {
-    background: radial-gradient(37.83% 86.54% at 9.75% 121.66%, #39A0FF 0%, rgba(57, 160, 255, 0.00) 100%), #000;
+    background: radial-gradient(484px 623px at 9.75% 121.66%, #39A0FF 0%, rgba(57, 160, 255, 0.00) 100%), #000;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -100,6 +100,11 @@ body .fancy-bg {
     cursor: pointer;
     color: #fff;
 }
+.nav-item.strong {
+    cursor: pointer;
+    color: #000;
+    background: #fff;
+}
 
 .resources {
     display: flex;
@@ -108,11 +113,21 @@ body .fancy-bg {
 }
 
 .dropdown-icon {
+    display: inline-block;
     width: 20px;
     height: 20px;
     background: #fff;
     mask-size: 20px 20px;
     mask-image: url(/img/icon-chevron-down.svg);
+}
+
+.icon-hamburger {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    mask-size: 20px 20px;
+    mask-image: url(/img/icon-hamburger.svg);
 }
 
 .right-group {
@@ -154,7 +169,6 @@ body .fancy-bg {
 .main-text {
     font-size: 48px;
     font-weight: 500;
-    margin: 30px 0;
 }
 
 .coming-soon-group {
@@ -199,16 +213,32 @@ body .fancy-bg {
 
 
 
+.typewriterHolder {
+    margin: 30px 0;
+}
 .typewriter {
     padding-right: 4px;
-    display: inline-block;
-    white-space: nowrap;
+    display: inline;
+    /*white-space: nowrap;*/
     overflow: hidden;
     border-right: solid 4px #fff;
     animation: blink-cursor 0.75s step-end infinite;
 }
 .typewriter.typing {
     animation: none;
+}
+
+.show-on-mobile {
+    display: none;
+}
+.mobileButton {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 24px;
+    top: 16px;
+    background: #000;
+    border: none;
 }
 
 @keyframes beat {

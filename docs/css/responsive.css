@@ -1,0 +1,78 @@
+@media screen and (max-width: 600px) {
+    .main-text {
+        font-size: 40px;
+    }
+    .coming-soon {
+        font-size: 18px;
+    }
+    .typewriterHolder {
+        text-align: left;
+        padding: 0 24px;
+        min-height: 138px;
+        margin-bottom: 48px;
+    }
+
+    .inner {
+        height: auto;
+    }
+
+    .main-content {
+        top: 92px;
+        display: block;
+        position: relative;
+        margin-top: unset;
+    }
+    .coming-soon-text {
+        top: 50%;
+        margin-left: 24px;
+        margin-right: unset;
+    }
+    .nestgen img {
+        display: inline-block;
+        width: 130px;
+        height: auto;
+    }
+    .coming-soon-line {
+        width: 32px;
+        margin-bottom: 6px;
+    }
+
+    .logo-text img {
+        display: block;
+        width: 130px;
+        height: auto;
+    }
+    .header {
+        padding: 16px 24px;
+    }
+    .nav {
+        display: none;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        position: absolute;
+        right: 4px;
+        top: 50px;
+        width: 200px;
+        background: #000;
+        padding: 10px 0px;
+        box-sizing: border-box;
+        border: solid 1px #777;
+        border-radius: 8px;
+
+    }
+    .nav.show {
+        display: block;
+        opacity: 1;
+    }
+    .nav .nav-item {
+        display: block;
+        padding: 2px 20px;
+    }
+    .show-on-mobile {
+        display: block;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+
+}

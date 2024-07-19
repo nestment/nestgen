@@ -2,6 +2,12 @@ const text = "Homebuying is broken. We aim to fix that.";
 const speed = 150; // Speed in milliseconds
 let index = 0;
 
+
+const toggleMenu = () => {
+    const menu = document.getElementById("navigation");
+    menu.classList.toggle("show");
+}
+
 const typeWriter = () => {
     const myDiv = document.getElementById("typewriter");
     myDiv.classList.add('typing');
@@ -21,3 +27,5 @@ window.addEventListener('load', () => {
         typeWriter();
     }, 1000);
 });
+
+document.getElementById('btn-menu').addEventListener('click', toggleMenu);

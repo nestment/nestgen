@@ -6,6 +6,7 @@
     <title>Nestment | NestGen</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 </head>
 <body>
     <div class="fancy-bg">
@@ -17,19 +18,25 @@
                     <a href="/"><img src="/img/logo-nestment.svg" class="logo-nestment" alt="Nestment"/></a>
                 </div>
             </div>
-            <nav class="nav">
+            <button class="mobileButton" id="btn-menu">
+                <i class="icon-hamburger"></i>
+            </button>
+            <nav class="nav" id="navigation">
                 <a class="nav-item" href="https://www.nestment.com/home#howitworks">How it works</a>
                 <a class="nav-item" href="https://www.nestment.com/nestrank">NestRank</a>
                 <a class="nav-item" href="https://www.nestment.com/successstories">Success Stories</a>
                 <a class="nav-item" href="https://articles.nestment.com/">Resources</a>
+                <a class="nav-item strong show-on-mobile" href="https://www.nestment.com/?action=startplanning">Start Planning</a>
             </nav>
-            <div class="right-group">
+            <div class="right-group hide-on-mobile">
                 <a href="https://www.nestment.com/?action=startplanning" class="btn start-planning">Start Planning</a>
             </div>
         </header>
         <main class="main-content">
             <div class="inner">
-                <h1 id="typewriter" class="typewriter main-text">&nbsp;</h1>
+                <div class="typewriterHolder">
+                    <h1 id="typewriter" class="typewriter main-text"></h1>
+                </div>
                 <div class="coming-soon-group">
                     <div class="coming-soon-text">
                         <span class="nestgen">
