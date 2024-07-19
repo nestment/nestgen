@@ -1,0 +1,38 @@
+@media screen and (max-width: 600px) {
+    .main-text {
+        font-size: 40px;
+    }
+    .coming-soon {
+        font-size: 18px;
+    }
+    .typewriterHolder {
+        text-align: left;
+        padding: 0 24px;
+        min-height: 138px;
+    }
+
+    .inner {
+        height: auto;
+    }
+
+    .main-content {
+        top: 92px;
+        display: block;
+        position: relative;
+        margin-top: unset;
+    }
+    .coming-soon-text {
+        top: 50%;
+        margin-left: 24px;
+        margin-right: unset;
+    }
+    .nestgen img {
+        display: inline-block;
+        width: 130px;
+        height: auto;
+    }
+    .coming-soon-line {
+        width: 32px;
+    }
+
+}
