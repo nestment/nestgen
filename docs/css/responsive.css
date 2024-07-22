@@ -11,8 +11,6 @@
     .typewriterHolder {
         text-align: left;
         padding: 0 24px;
-        min-height: 144px;
-        margin-bottom: 48px;
     }
 
     .inner {
@@ -82,4 +80,9 @@
         display: none;
     }
 
+}
+@media screen and (max-width: 767px) {
+    .typewriterHolder {
+        min-height: 144px;
+    }
 }
