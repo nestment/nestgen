@@ -1,5 +1,5 @@
 const text = "Homebuying is broken. We aim to fix that.";
-const speed = 150; // Speed in milliseconds
+const speed = 110; // Speed in milliseconds
 let index = 0;
 
 
